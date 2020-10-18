@@ -1,0 +1,413 @@
+[
+    {
+        "key": "group_58bedd054b006",
+        "title": "DMS CF Custom Parallax",
+        "fields": [
+            {
+                "key": "field_58de17e94cb9c",
+                "label": "Capas del escenario",
+                "name": "",
+                "type": "tab",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "placement": "top",
+                "endpoint": 0
+            },
+            {
+                "key": "field_58dd10a624ac3",
+                "label": "Imagen de fondo del escenario",
+                "name": "imagen_de_fondo_del_escenario",
+                "type": "image",
+                "instructions": "Imagen de fondo del escenario",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "return_format": "array",
+                "preview_size": "thumbnail",
+                "library": "all",
+                "min_width": "",
+                "min_height": "",
+                "min_size": "",
+                "max_width": "",
+                "max_height": "",
+                "max_size": "",
+                "mime_types": ""
+            },
+            {
+                "key": "field_58dd08b4011a2",
+                "label": "Escenario parallax",
+                "name": "escenario_parallax",
+                "type": "repeater",
+                "instructions": "Escenario parallax",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "collapsed": "",
+                "min": "",
+                "max": "",
+                "layout": "row",
+                "button_label": "Agregar layer (capa)",
+                "sub_fields": [
+                    {
+                        "key": "field_58dd09bd8985e",
+                        "label": "Depth (Profundidad de capa) (0.00 a 1.00)",
+                        "name": "depth",
+                        "type": "text",
+                        "instructions": "Depth (Profundidad de capa) (0.00 a 1.00)",
+                        "required": 1,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "default_value": "0.5",
+                        "placeholder": "0.5",
+                        "prepend": "",
+                        "append": "",
+                        "maxlength": ""
+                    },
+                    {
+                        "key": "field_58f9cb39e952c",
+                        "label": "Clases custom (Para elementos custom)",
+                        "name": "custom_classes",
+                        "type": "text",
+                        "instructions": "Clases custom (Para elementos custom) (Separar por espacios para m\u00e1s de una)",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "default_value": "",
+                        "placeholder": "Clase",
+                        "prepend": "",
+                        "append": "",
+                        "maxlength": ""
+                    },
+                    {
+                        "key": "field_58dd08d2011a3",
+                        "label": "Layer (Capa)",
+                        "name": "layer",
+                        "type": "repeater",
+                        "instructions": "Layer (Capa)",
+                        "required": 1,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "collapsed": "",
+                        "min": "",
+                        "max": "",
+                        "layout": "block",
+                        "button_label": "Agregar imagen",
+                        "sub_fields": [
+                            {
+                                "key": "field_58dd092f011a4",
+                                "label": "Imagen",
+                                "name": "imagen",
+                                "type": "image",
+                                "instructions": "Imagen",
+                                "required": 1,
+                                "conditional_logic": 0,
+                                "wrapper": {
+                                    "width": "",
+                                    "class": "",
+                                    "id": ""
+                                },
+                                "return_format": "array",
+                                "preview_size": "thumbnail",
+                                "library": "all",
+                                "min_width": "",
+                                "min_height": "",
+                                "min_size": "",
+                                "max_width": "",
+                                "max_height": "",
+                                "max_size": "",
+                                "mime_types": ""
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "key": "field_58de17cf4cb9b",
+                "label": "Datos generales del escenario Parallax",
+                "name": "",
+                "type": "tab",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "placement": "top",
+                "endpoint": 0
+            },
+            {
+                "key": "field_58bff32d3cb56",
+                "label": "Calibrate-x",
+                "name": "calibrate-x",
+                "type": "text",
+                "instructions": "Specifies whether or not to cache & calculate the motion relative to the initial x axis value on initialisation.\r\nOptions: (true or false)",
+                "required": 1,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "false",
+                "placeholder": "false",
+                "prepend": "",
+                "append": "",
+                "maxlength": ""
+            },
+            {
+                "key": "field_58bff3693cb57",
+                "label": "Calibrate-y",
+                "name": "calibrate-y",
+                "type": "text",
+                "instructions": "Specifies whether or not to cache & calculate the motion relative to the initial y axis value on initialisation.\r\nOptions: (true or false)",
+                "required": 1,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "true",
+                "placeholder": "true",
+                "prepend": "",
+                "append": "",
+                "maxlength": ""
+            },
+            {
+                "key": "field_58bff37c3cb58",
+                "label": "Invert-x",
+                "name": "invert-x",
+                "type": "text",
+                "instructions": "true moves layers in opposition to the device motion, false slides them away.\r\nOptions: (true or false)",
+                "required": 1,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "true",
+                "placeholder": "true",
+                "prepend": "",
+                "append": "",
+                "maxlength": ""
+            },
+            {
+                "key": "field_58bff3933cb59",
+                "label": "Invert-y",
+                "name": "invert-y",
+                "type": "text",
+                "instructions": "true moves layers in opposition to the device motion, false slides them away.\r\nOptions: (true or false)",
+                "required": 1,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "true",
+                "placeholder": "true",
+                "prepend": "",
+                "append": "",
+                "maxlength": ""
+            },
+            {
+                "key": "field_58bff3a43cb5a",
+                "label": "Limit-x",
+                "name": "limit-x",
+                "type": "text",
+                "instructions": "A numeric value limits the total range of motion in x, false allows layers to move with complete freedom.\r\nOptions: (true or false)",
+                "required": 1,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "false",
+                "placeholder": "false",
+                "prepend": "",
+                "append": "",
+                "maxlength": ""
+            },
+            {
+                "key": "field_58bff3b73cb5b",
+                "label": "Limit-y",
+                "name": "limit-y",
+                "type": "text",
+                "instructions": "A numeric value limits the total range of motion in y, false allows layers to move with complete freedom.\r\nOptions: (true or false)",
+                "required": 1,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "false",
+                "placeholder": "false",
+                "prepend": "",
+                "append": "",
+                "maxlength": ""
+            },
+            {
+                "key": "field_58bff3c53cb5c",
+                "label": "Scalar-x",
+                "name": "scalar-x",
+                "type": "text",
+                "instructions": "Multiplies the input motion by this value, increasing or decreasing the sensitivity of the layer motion.\r\nOptions: (number)",
+                "required": 1,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "10.0",
+                "placeholder": "10.0",
+                "prepend": "",
+                "append": "",
+                "maxlength": ""
+            },
+            {
+                "key": "field_58bff3dd3cb5d",
+                "label": "Scalar-y",
+                "name": "scalar-y",
+                "type": "text",
+                "instructions": "Multiplies the input motion by this value, increasing or decreasing the sensitivity of the layer motion.\r\nOptions: (number)",
+                "required": 1,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "10.0",
+                "placeholder": "10.0",
+                "prepend": "",
+                "append": "",
+                "maxlength": ""
+            },
+            {
+                "key": "field_58bff3ee3cb5e",
+                "label": "Friction-x",
+                "name": "friction-x",
+                "type": "text",
+                "instructions": "The amount of friction the layers experience. This essentially adds some easing to the layer motion.\r\nOptions: (number range 0 - 1)",
+                "required": 1,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "0.1",
+                "placeholder": "0.1",
+                "prepend": "",
+                "append": "",
+                "maxlength": ""
+            },
+            {
+                "key": "field_58bff41b3cb5f",
+                "label": "Friction-y",
+                "name": "friction-y",
+                "type": "text",
+                "instructions": "The amount of friction the layers experience. This essentially adds some easing to the layer motion.\r\nOptions: (number range 0 - 1)",
+                "required": 1,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "0.1",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "maxlength": ""
+            },
+            {
+                "key": "field_58bff4263cb60",
+                "label": "Origin-x",
+                "name": "origin-x",
+                "type": "text",
+                "instructions": "The x origin of the mouse input. Defaults to 0.5 (the center). 0 moves the origin to the left edge, 1 to the right edge. Mouse input only.\r\nOptions: (number)",
+                "required": 1,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "0.5",
+                "placeholder": "0.5",
+                "prepend": "",
+                "append": "",
+                "maxlength": ""
+            },
+            {
+                "key": "field_58bff4493cb61",
+                "label": "Origin-y",
+                "name": "origin-y",
+                "type": "text",
+                "instructions": "The y origin of the mouse input. Defaults to 0.5 (the center). 0 moves the origin to the top edge, 1 to the bottom edge. Mouse input only.\r\nOptions: (number)",
+                "required": 1,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "0.5",
+                "placeholder": "0.5",
+                "prepend": "",
+                "append": "",
+                "maxlength": ""
+            }
+        ],
+        "location": [
+            [
+                {
+                    "param": "post_type",
+                    "operator": "==",
+                    "value": "dms_parallax_scene"
+                }
+            ]
+        ],
+        "menu_order": 0,
+        "position": "normal",
+        "style": "default",
+        "label_placement": "top",
+        "instruction_placement": "label",
+        "hide_on_screen": "",
+        "active": 1,
+        "description": ""
+    }
+]

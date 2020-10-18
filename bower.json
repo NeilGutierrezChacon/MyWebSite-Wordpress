@@ -1,0 +1,24 @@
+{
+  "name": "dms-theme",
+  "authors": [
+    "rgarcia <rgarcia@deideasmarketing.com>"
+  ],
+  "description": "",
+  "main": "",
+  "license": "MIT",
+  "homepage": "",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components"
+  ],
+  "dependencies": {
+    "Swiper": "swiper#^3.3.1",
+    "font-awesome": "^4.6.3",
+    "animate.css": "^3.5.2",
+    "breakpoint-sass": "^2.7.0",
+    "normalize-css": "^4.2.0",
+    "parallax": "^2.1.3"
+  }
+}

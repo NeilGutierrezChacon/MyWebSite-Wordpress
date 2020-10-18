@@ -1,0 +1,321 @@
+// =========================================================================================
+// DMS - box-shadow
+// =========================================================================================
+@mixin box-shadow($shadows) {
+
+	-moz-box-shadow: $shadows;
+	-webkit-box-shadow: $shadows;
+	box-shadow: $shadows;
+
+}
+
+// =========================================================================================
+// DMS - opacity
+// =========================================================================================
+@mixin opacity($opacity : 1){
+
+    opacity: $opacity;
+    $opacity : $opacity * 100;
+    filter: Alpha(opacity=#{$opacity}); /* IE8 and earlier */
+
+}
+
+// =============================================================================
+// Font Face
+// =============================================================================
+@mixin font-face($name, $path, $weight: null, $style: null, $exts: eot woff2 woff ttf svg) {
+    
+    $src: null;
+
+    $extmods: (
+        eot: "?",
+        svg: "#" + str-replace($name, " ", "_")
+    );
+
+    $formats: (
+        otf: "opentype",
+        ttf: "truetype"
+    );
+
+    @each $ext in $exts {
+        $extmod: if(map-has-key($extmods, $ext), $ext + map-get($extmods, $ext), $ext);
+        $format: if(map-has-key($formats, $ext), map-get($formats, $ext), $ext);
+        $src: append($src, url(quote($path + "." + $extmod)) format(quote($format)), comma);
+    }
+
+    @font-face {
+        font-family: quote($name);
+        font-style: $style;
+        font-weight: $weight;
+        src: $src;
+    }
+
+}
+
+// =========================================================================================
+// DMS - BREAKPOINT SHORTHAND
+// =========================================================================================
+@mixin b($breakpoint){
+
+    @include breakpoint($breakpoint){
+
+        @content;
+
+    }
+
+}
+
+// =========================================================================================
+// DMS - BEM
+// =========================================================================================
+
+// EXAMPLE
+
+// .block {
+//     /* CSS declarations for `.block` */
+
+//     @include e('element') {
+//         /* CSS declarations for `.block__element` */
+//     }
+
+//     @include m('modifier') {
+//         /* CSS declarations for `.block--modifier` */
+
+//         @include e('element') {
+//             /* CSS declarations for `.block--modifier__element` */
+//         }
+//     }
+// }
+
+/// BLOCK ELEMENT
+/// @access public
+/// @param {String} $element - Element's name
+@mixin element($element) {
+    &__#{$element} {
+        @content;
+    }
+}
+/// @alias element
+@mixin e($element) {
+    @include element($element)  {
+        @content;
+    }
+}
+
+/// BLOCK MODIFIER
+/// @access public
+/// @param {String} $modifier - Modifier's name
+@mixin modifier($modifier) {
+    &--#{$modifier} {
+        @content;
+    }
+}
+/// @alias modifier
+@mixin m($modifier) {
+    @include modifier($modifier) {
+        @content;
+    }
+}
+
+
+// =========================================================================================
+// DMS - NTH CHILD
+// =========================================================================================
+@mixin dms_child($n) {
+    &:nth-child(#{$n}){
+        @content;
+    }
+}
+
+// =========================================================================================
+// DMS - CUSTOM SCROLLBAR
+// =========================================================================================
+// Browser Support: Chrome, Safari, Opera +15, Android, iOS
+@mixin dms-custom-scrollbar( 
+    $scrollbar__size : 8px,
+    $scrollbar-button__size: 1px,
+    $scrollbar-track__bg : transparent,
+    $scrollbar-track__border : 1px solid transparent,
+    $scrollbar-track__border-radius : 10px,
+    $scrollbar-thumb__bg : #303030,
+    $scrollbar-thumb__border : 1px solid #FEFEFE,
+    $scrollbar-thumb__border-radius : 10px
+){
+
+    &::-webkit-scrollbar {
+
+        width: $scrollbar__size;
+        height: $scrollbar__size;
+
+    }
+
+    &::-webkit-scrollbar-button {
+
+        width: $scrollbar-button__size;
+        height: $scrollbar-button__size;
+
+    }
+
+    &::-webkit-scrollbar-thumb {
+
+        background: $scrollbar-thumb__bg;
+        border: $scrollbar-thumb__border;
+        border-radius: $scrollbar-thumb__border-radius;
+
+    }
+
+    &::-webkit-scrollbar-track {
+
+        background: $scrollbar-track__bg;
+        border: $scrollbar-track__border;
+        border-radius: $scrollbar-track__border-radius;
+
+    }
+
+    &::-webkit-scrollbar-corner {
+
+        background: transparent;
+
+    }
+
+}
+
+// =========================================================================================
+// DMS - ASPECT RATIO
+// =========================================================================================
+@mixin dms-aspect-ratio($padding-bottom : 56.25%){
+
+    &:before{
+
+        content: "";
+        display: block;
+        padding-bottom: $padding-bottom;
+
+    }
+
+}
+
+// =========================================================================================
+// DMS - GRID
+// =========================================================================================
+@mixin dms-grid($jc : flex-start){
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: $jc;
+
+}
+
+// =========================================================================================
+// DMS - GRID ITEM
+// =========================================================================================
+
+// SAMPLE USAGE
+// .dms-grid{
+
+//     width: 100%;
+
+//     @include dms-grid(center); // OPTIONAL ARGUMENT
+
+//     &__item{
+
+//         @include dms-grid__item(1, 20px); // THIS APPLY MARGIN BOTTOM ONLY, NOT IN MARGIN RIGHT
+//         @include dms-grid__item(2, 40px, $screen-tablet-p, false);
+//         @include dms-grid__item(3, 30px, $screen-tablet-l, true);
+
+//     }
+
+// }
+@mixin dms-grid__item($items : 1, $gutter : 0px, $breakpoint : 0, $gutterBottom: true){
+
+    @if $items > 99 {
+
+        $items : 99;
+
+    } @else if $items < 1{
+
+        $items : 1;
+
+    }
+
+    $spaces : $items - 1;
+    $totalGutter : $spaces * $gutter + 1; // FOR ROUNDED SUBPIXELS - DIFFERENT WAYS IN BROWSERS
+
+    @if $spaces == 0 {
+
+        width: 100%;
+        margin-right: 0;
+
+        @if $gutterBottom == true {
+
+            margin-bottom: $gutter;
+
+        } @else{
+            
+            margin-bottom: 0px;
+
+        }
+
+    } @else{
+
+        @if $breakpoint != 0 and $breakpoint != false and $breakpoint != none{
+
+            @include b($breakpoint){
+
+                width: calc( (100% - #{$totalGutter}) / #{$items} );
+
+                &:nth-child(n){
+
+                    margin-right: $gutter;
+
+                }
+
+                &:nth-child(#{$items}n+#{$items}){
+
+                    margin-right: 0;
+
+                }
+
+                @if $gutterBottom == true {
+
+                    margin-bottom: $gutter;
+
+                } @else{
+                    
+                    margin-bottom: 0px;
+
+                }
+
+            }
+
+        } @else {
+
+            width: calc( (100% - #{$totalGutter}) / #{$items} );
+
+            &:nth-child(n){
+
+                margin-right: $gutter;
+
+            }
+
+            &:nth-child(#{$items}n+#{$items}){
+
+                margin-right: 0;
+
+            }
+
+            @if $gutterBottom == true {
+
+                margin-bottom: $gutter;
+
+            } @else{
+                
+                margin-bottom: 0px;
+
+            }
+
+        }
+
+    }
+
+}

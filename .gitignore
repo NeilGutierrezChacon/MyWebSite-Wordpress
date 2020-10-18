@@ -1,0 +1,15 @@
+!languages
+
+# dependencies
+node_modules/*
+assets/bower_components/*
+
+
+# compiled output
+assets/js/min/*
+assets/css/*
+dist/*
+
+#System Files
+.DS_Store
+Thumbs.db

@@ -1,0 +1,220 @@
+// =========================================================================================
+// VARS
+// =========================================================================================
+
+
+// DEBUG
+$debug : false;
+
+// OPTIONS FOR CSS
+$big_media_query : true; // MEDIA QUERY +1920px
+$body_align_center : true; // LAYOUT BODY ALL IN CENTER
+
+
+// PALETTE
+
+	// COLOR PRIMARY
+	$color-a: #B12823;
+
+	// COLOR SECONDARY
+	$color-b : #5D7CA3;
+
+	// COLOR THREE
+	$color-c : #9A9B9F;
+
+	// COLOR FOUR
+	$color-d : #E5E7E9;
+
+
+
+// TRANSITION BASE DMS
+$dmsTransition: all 0.3s ease-in-out;
+
+
+// RESPONSIVE
+
+	// DESKTOP
+
+	// desktop-xxl x > 2559px (min)
+	$screen-desktop-xxl : 2559px;
+
+	// desktop-xl x < 1920px (max) - BASIC CSS
+	$screen-desktop-xl : 1920px;
+
+	// desktop-lg x < 1600px (max)
+	$screen-desktop-lg: 1600px;
+
+	// desktop-md x < 1440px (max)
+	$screen-desktop-md: 1440px;
+
+	// desktop-sm x < 1366px (max)
+	$screen-desktop-sm: 1366px;
+
+	// desktop-xs x < 1200px (max)
+	$screen-desktop-xs-big: 1280px;
+
+	// desktop-xs x < 1200px (max)
+	$screen-desktop-xs: 1200px;
+
+
+
+	// TABLET
+
+	// tablet landscape x < 1024px (max)
+	$screen-tablet-l: 1024px;
+
+	// tablet portrait x < 768px (max)
+	$screen-tablet-p: 768px;
+
+	// custom-lower-tablet-p x < 600 (max)
+	$screen-custom-lower-tablet-p: 600px;
+
+
+
+	// MOBILE
+
+	// mobile landscape x < 480 (max)
+	$screen-mobile-l: 480px;
+
+	// mobile portrait x < 320 (max)
+	$screen-mobile-p: 320px;
+
+// TIPOGRAPHY
+
+// FONTS
+$font-a 		: "century-gothic";
+$font-a-url 	: "../fonts/century-gothic";
+
+
+// DEFAULT SIZE
+$font-size-initial : 16px;
+$font-size-in-big-media-query : 26px;
+
+// DEFAULT LINE HEIGHT
+$line-height-initial : 16px;
+
+// DEFAULT WEIGHT
+$font-weight-initial : 400;
+
+
+// THEME VARS
+
+	// BREAKPOINT TO CHANGE MENU AND RESPONSIVE
+	// USAGE : FOR MAX WIDTH TO DOWN: b(max-width $dms_breakpoint - 1), FOR MIN WIDTH TO UP b($dms_breakpoint)
+	$dms_breakpoint : $screen-desktop-xs-big; // CHANGE VAR WIDTH IN JS IF CHANGE THIS
+
+
+
+// LAYOUT
+
+	// CHOOSE TYPE LAYOUT (boxed || fluid)
+	$layout : "boxed";
+
+
+	// BOXED VARS
+	$boxed-big 	: 1920px; // FOR BIG MEDIA QUERY
+	$boxed 	: 1440px;
+	$boxed2 : 1140px;
+
+
+	// FLUID VARS
+	$fluid__padding-left: 8%;
+	$fluid__padding-right: 8%;
+	$fluid__padding-top: 20px;
+	$fluid__padding-bottom: 20px;
+
+
+
+// MENU
+
+	// DESKTOP
+
+		$maxElems: 								15;
+		$menu__justify-content:					center;
+
+		// MENU ITEM DEPTH 0 (a)
+		$item__padding: 						10px 20px;
+		$item__text-transform: 					uppercase;
+		$item__background-color: 				#FFF;
+		$item__background-color--hover: 		$color-a;
+		$item__color: 							#000;
+		$item__color--hover: 					#FFF;
+		$item__flex: 							0 1 auto;
+		$item__submenu-min-width: 				220px;
+
+
+		// MENU ITEM DEPTH 1 (a)
+		$item__sub__padding: 					10px 30px;
+		$item__sub__text-transform: 			lowercase;
+		$item__sub__background-color: 			#000;
+		$item__sub__background-color--hover: 	$color-a;
+		$item__sub__color: 						#FFF;
+		$item__sub__color--hover: 				#FFF;
+
+
+		// ANIM SPEED
+		$menu1AnimSpeed: 300ms;
+		$menu2AnimSpeed: 175ms;
+		$menu3AnimSpeed: 200ms;
+		$menu4AnimSpeed: 300ms;
+		$menu5AnimSpeed: 300ms;
+		
+
+	// MOBILE
+
+		// MENU WIDTH AND TRANSLATE
+		$translateX__menu : 250px; // ALSO USER FOR WIDTH
+		$translateY__menu : 0px;
+
+		// TOGGLE BUTTON VARS (COLORS)
+		$toggle-button__bg-color : $color-b;
+		$toggle-button__color : #FFF;
+
+		// MENU RESPONSIVE CUSTOMIZABLE
+
+			// COLOR BG MENU
+			$dms-mobile-menu-wrapper__bg-color : #FDFDFD;
+
+
+// CUSTOM VARS
+
+	// MAX WIDTH LOGO
+	$max-width-logo : 240px;
+	$dms-page__bg-color: #FFF; // #FDFDFD
+
+
+// CUSTOM SCROLLBAR VARS
+
+	// SIZE
+	$scrollbar__size : 8px;
+	$scrollbar-button__size : 1px;
+
+	// RAIL
+	$scrollbar-track__bg : transparent;
+	$scrollbar-track__border : 1px solid transparent;
+	$scrollbar-track__border-radius : 10px;
+
+	// BUTTON
+	$scrollbar-thumb__bg : #303030;
+	$scrollbar-thumb__border : 1px solid #FEFEFE;
+	$scrollbar-thumb__border-radius : 10px;
+
+
+
+// CUSTOM SELECT VARS
+
+	// BORDER
+	$dms-custom-select__border-radius: 2px;
+	$dms-custom-select__border-color: #000;
+	$dms-custom-select__border-color--hover: #000;
+
+	// BACKGROUND COLOR
+	$dms-custom-select__background-color: $color-a;
+	$dms-custom-select__background-color--hover: $color-b;
+
+	// COLOR
+	$dms-custom-select__color: #000;
+	$dms-custom-select__color--hover: #FFF;
+	
+
+

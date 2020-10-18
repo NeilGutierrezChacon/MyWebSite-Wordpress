@@ -1,0 +1,950 @@
+[
+    {
+        "key": "theme_settings_email_group",
+        "title": "Theme Settings - Email",
+        "fields": [
+            {
+                "key": "field_5873a3fe481cd",
+                "label": "Header del email",
+                "name": "",
+                "type": "tab",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "placement": "top",
+                "endpoint": 0
+            },
+            {
+                "key": "field_5873a33f3b438",
+                "label": "Logo para email",
+                "name": "theme_settings_email__logo",
+                "type": "image",
+                "instructions": "Logo para email (Si no se escoge una imagen, recoger\u00e1 el logo principal)",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "return_format": "array",
+                "preview_size": "thumbnail",
+                "library": "all",
+                "min_width": "",
+                "min_height": "",
+                "min_size": "",
+                "max_width": "",
+                "max_height": "",
+                "max_size": "",
+                "mime_types": ""
+            },
+            {
+                "key": "field_5873a434481cf",
+                "label": "Logo width",
+                "name": "theme_settings_email__logo_width",
+                "type": "number",
+                "instructions": "Tama\u00f1o de ancho para el logo del email (por defecto 200px)",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "min": "",
+                "max": "",
+                "step": ""
+            },
+            {
+                "key": "field_5873a47c590a4",
+                "label": "From email",
+                "name": "theme_settings_email__from_email",
+                "type": "email",
+                "instructions": "From email",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "placeholder": "",
+                "prepend": "",
+                "append": ""
+            },
+            {
+                "key": "field_5873a514590a5",
+                "label": "Bcc emails",
+                "name": "theme_settings_email__bcc_email",
+                "type": "text",
+                "instructions": "Bcc emails, separados por ','",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "maxlength": ""
+            },
+            {
+                "key": "field_5873a414481ce",
+                "label": "Footer del email",
+                "name": "",
+                "type": "tab",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "placement": "top",
+                "endpoint": 0
+            },
+            {
+                "key": "field_5873a56785a49",
+                "label": "A\u00f1adir redes sociales en email",
+                "name": "theme_settings_email__social_networks_in_mail",
+                "type": "true_false",
+                "instructions": "A\u00f1adir redes sociales en email (Marcado: S\u00ed)",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "message": "",
+                "default_value": 0
+            },
+            {
+                "key": "field_5873a5c085a4a",
+                "label": "Copyright en email",
+                "name": "theme_settings_email__copyright",
+                "type": "text",
+                "instructions": "Copyright que aparecer\u00e1 en email",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "placeholder": "Copyright (c) [year] [company]",
+                "prepend": "",
+                "append": "",
+                "maxlength": ""
+            },
+            {
+                "key": "field_5873a62379735",
+                "label": "Colores del email",
+                "name": "",
+                "type": "tab",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "placement": "top",
+                "endpoint": 0
+            },
+            {
+                "key": "field_5873a63979736",
+                "label": "Color de fondo - Email",
+                "name": "theme_settings_email__email_bg_color",
+                "type": "color_picker",
+                "instructions": "Color de fondo - Email",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "#EFEFEF"
+            },
+            {
+                "key": "field_5873a68279737",
+                "label": "Color de fondo - Header",
+                "name": "theme_settings_email__header_bg_color",
+                "type": "color_picker",
+                "instructions": "Color de fondo - Header",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "#557DA1"
+            },
+            {
+                "key": "field_5873a6d179739",
+                "label": "Color de texto - Header",
+                "name": "theme_settings_email__header_text_color",
+                "type": "color_picker",
+                "instructions": "Color de texto - Header",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "#FFFFFF"
+            },
+            {
+                "key": "field_5873a6bb79738",
+                "label": "Color de fondo - Body",
+                "name": "theme_settings_email__body_bg_color",
+                "type": "color_picker",
+                "instructions": "Color de fondo - Body",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "#FFFFFF"
+            },
+            {
+                "key": "field_5873a6f37973a",
+                "label": "Color de texto - Body",
+                "name": "theme_settings_email__body_text_color",
+                "type": "color_picker",
+                "instructions": "Color de texto - Body",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "#000000"
+            },
+            {
+                "key": "field_5873a7087973b",
+                "label": "Color de texto - Footer",
+                "name": "theme_settings_email__footer_text_color",
+                "type": "color_picker",
+                "instructions": "Color de texto - Footer",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "#000000"
+            },
+            {
+                "key": "field_5873a74a7973d",
+                "label": "Previsualizar",
+                "name": "",
+                "type": "tab",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "placement": "top",
+                "endpoint": 0
+            },
+            {
+                "key": "field_5873a7537973e",
+                "label": "Previsualizar",
+                "name": "",
+                "type": "message",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "message": "",
+                "new_lines": "wpautop",
+                "esc_html": 0
+            }
+        ],
+        "location": [
+            [
+                {
+                    "param": "options_page",
+                    "operator": "==",
+                    "value": "acf-options-email"
+                }
+            ]
+        ],
+        "menu_order": 0,
+        "position": "normal",
+        "style": "default",
+        "label_placement": "top",
+        "instruction_placement": "label",
+        "hide_on_screen": "",
+        "active": 1,
+        "description": "",
+        "modified": 1484066150,
+        "local": "json"
+    },
+    {
+        "key": "theme_settings_general_group",
+        "title": "Theme Settings - General",
+        "fields": [
+            {
+                "key": "field_58739ff13eb60",
+                "label": "Logo principal",
+                "name": "theme_settings_general__logo",
+                "type": "image",
+                "instructions": "Logo principal de la web",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "return_format": "array",
+                "preview_size": "thumbnail",
+                "library": "all",
+                "min_width": "",
+                "min_height": "",
+                "min_size": "",
+                "max_width": "",
+                "max_height": "",
+                "max_size": "",
+                "mime_types": ""
+            },
+            {
+                "key": "field_5873a03d3eb62",
+                "label": "Logo Alternativo",
+                "name": "theme_settings_general__logo_alt",
+                "type": "image",
+                "instructions": "Logo alternativo de la web",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "return_format": "array",
+                "preview_size": "thumbnail",
+                "library": "all",
+                "min_width": "",
+                "min_height": "",
+                "min_size": "",
+                "max_width": "",
+                "max_height": "",
+                "max_size": "",
+                "mime_types": ""
+            },
+            {
+                "key": "field_5873a0833eb63",
+                "label": "Favicon",
+                "name": "theme_settings_general__favicon",
+                "type": "image",
+                "instructions": "Logo alternativo de la web",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "return_format": "array",
+                "preview_size": "thumbnail",
+                "library": "all",
+                "min_width": "",
+                "min_height": "",
+                "min_size": "",
+                "max_width": "",
+                "max_height": "",
+                "max_size": "",
+                "mime_types": ""
+            },
+            {
+                "key": "field_5873a0b92cf30",
+                "label": "Tel\u00e9fono de empresa",
+                "name": "theme_settings_general__phone",
+                "type": "text",
+                "instructions": "Tel\u00e9fono de empresa",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "maxlength": ""
+            },
+            {
+                "key": "field_5873a0e32cf31",
+                "label": "Email de empresa",
+                "name": "theme_settings_general__mail",
+                "type": "email",
+                "instructions": "Email de empresa",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "placeholder": "",
+                "prepend": "",
+                "append": ""
+            },
+            {
+                "key": "field_5873b3cb017fc",
+                "label": "Google Analytics de la web",
+                "name": "theme_settings_general__google_analytics",
+                "type": "textarea",
+                "instructions": "Google Analytics de la web (con el tag script tambi\u00e9n)",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "placeholder": "",
+                "maxlength": "",
+                "rows": "",
+                "new_lines": ""
+            },
+            {
+                "key": "field_5873a1292cf33",
+                "label": "Imagen de fondo de login",
+                "name": "theme_settings_general__login_bg_image",
+                "type": "image",
+                "instructions": "Imagen de fondo de login",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "return_format": "array",
+                "preview_size": "thumbnail",
+                "library": "all",
+                "min_width": "",
+                "min_height": "",
+                "min_size": "",
+                "max_width": "",
+                "max_height": "",
+                "max_size": "",
+                "mime_types": ""
+            },
+            {
+                "key": "field_5873a1522cf34",
+                "label": "Imagen de fondo de registro",
+                "name": "theme_settings_general__register_bg_image",
+                "type": "image",
+                "instructions": "Imagen de fondo de registro",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "return_format": "array",
+                "preview_size": "thumbnail",
+                "library": "all",
+                "min_width": "",
+                "min_height": "",
+                "min_size": "",
+                "max_width": "",
+                "max_height": "",
+                "max_size": "",
+                "mime_types": ""
+            }
+        ],
+        "location": [
+            [
+                {
+                    "param": "options_page",
+                    "operator": "==",
+                    "value": "acf-options-general"
+                }
+            ]
+        ],
+        "menu_order": 0,
+        "position": "normal",
+        "style": "default",
+        "label_placement": "top",
+        "instruction_placement": "label",
+        "hide_on_screen": "",
+        "active": 1,
+        "description": "",
+        "modified": 1484059725,
+        "local": "json"
+    },
+    {
+        "key": "theme_settings_header_group",
+        "title": "Theme Settings - Header",
+        "fields": [
+            {
+                "key": "field_583710a56bf65",
+                "label": "Animaci\u00f3n para el header",
+                "name": "theme_settings_header__animation_header",
+                "type": "select",
+                "instructions": "Animaci\u00f3n para el header",
+                "required": 1,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "choices": {
+                    "bounce": "bounce",
+                    "flash": "flash",
+                    "pulse": "pulse",
+                    "rubberBand": "rubberBand",
+                    "shake": "shake",
+                    "swing": "swing",
+                    "tada": "tada",
+                    "wobble": "wobble",
+                    "jello": "jello",
+                    "bounceIn": "bounceIn",
+                    "bounceInDown": "bounceInDown",
+                    "bounceInUp": "bounceInUp",
+                    "bounceOut": "bounceOut",
+                    "bounceOutDown": "bounceOutDown",
+                    "bounceOutLeft": "bounceOutLeft",
+                    "bounceOutRight": "bounceOutRight",
+                    "bounceOutUp": "bounceOutUp",
+                    "fadeIn": "fadeIn",
+                    "fadeInDown": "fadeInDown",
+                    "fadeInDownBig": "fadeInDownBig",
+                    "fadeInLeft": "fadeInLeft",
+                    "fadeInLeftBig": "fadeInLeftBig",
+                    "fadeInRightBig": "fadeInRightBig",
+                    "fadeInUp": "fadeInUp",
+                    "fadeInUpBig": "fadeInUpBig",
+                    "fadeOut": "fadeOut",
+                    "fadeOutDown": "fadeOutDown",
+                    "fadeOutDownBig": "fadeOutDownBig",
+                    "fadeOutLeft": "fadeOutLeft",
+                    "fadeOutLeftBig": "fadeOutLeftBig",
+                    "fadeOutRightBig": "fadeOutRightBig",
+                    "fadeOutUp": "fadeOutUp",
+                    "fadeOutUpBig": "fadeOutUpBig",
+                    "flip": "flip",
+                    "flipInX": "flipInX",
+                    "flipInY": "flipInY",
+                    "flipOutX": "flipOutX",
+                    "flipOutY": "flipOutY",
+                    "lightSpeedIn": "lightSpeedIn",
+                    "lightSpeedOut": "lightSpeedOut",
+                    "rotateIn": "rotateIn",
+                    "rotateInDownLeft": "rotateInDownLeft",
+                    "rotateInDownRight": "rotateInDownRight",
+                    "rotateInUpLeft": "rotateInUpLeft",
+                    "rotateInUpRight": "rotateInUpRight",
+                    "rotateOut": "rotateOut",
+                    "rotateOutDownLeft": "rotateOutDownLeft",
+                    "rotateOutDownRight": "rotateOutDownRight",
+                    "rotateOutUpLeft": "rotateOutUpLeft",
+                    "rotateOutUpRight": "rotateOutUpRight",
+                    "slideInUp": "slideInUp",
+                    "slideInDown": "slideInDown",
+                    "slideInLeft": "slideInLeft",
+                    "slideInRight": "slideInRight",
+                    "slideOutUp": "slideOutUp",
+                    "slideOutDown": "slideOutDown",
+                    "slideOutLeft": "slideOutLeft",
+                    "slideOutRight": "slideOutRight",
+                    "zoomIn": "zoomIn",
+                    "zoomInDown": "zoomInDown",
+                    "zoomInLeft": "zoomInLeft",
+                    "zoomInRight": "zoomInRight",
+                    "zoomInUp": "zoomInUp",
+                    "zoomOut": "zoomOut",
+                    "zoomOutDown": "zoomOutDown",
+                    "zoomOutLeft": "zoomOutLeft",
+                    "zoomOutUp": "zoomOutUp",
+                    "hinge": "hinge",
+                    "rollIn": "rollIn",
+                    "rollOut": "rollOut"
+                },
+                "default_value": [
+                    "fadeInDown"
+                ],
+                "allow_null": 0,
+                "multiple": 0,
+                "ui": 0,
+                "ajax": 1,
+                "return_format": "value",
+                "placeholder": ""
+            },
+            {
+                "key": "field_587663f96303d",
+                "label": "Header Men\u00fa: Manera de mostrar submen\u00fa (Opciones)",
+                "name": "",
+                "type": "tab",
+                "instructions": "Header Men\u00fa : Manera de mostrar submen\u00fa (horizontal o vertical)",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "placement": "top",
+                "endpoint": 0
+            },
+            {
+                "key": "field_587661f3f9cb3",
+                "label": "Desplegar (horizontal o vertical)",
+                "name": "theme_settings_header__header_menu_display_type",
+                "type": "select",
+                "instructions": "Desplegar (horizontal o vertical)",
+                "required": 1,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "choices": {
+                    "inline": "En l\u00ednea",
+                    "vertical": "Vertical"
+                },
+                "default_value": [
+                    "vertical"
+                ],
+                "allow_null": 0,
+                "multiple": 0,
+                "ui": 0,
+                "ajax": 0,
+                "return_format": "value",
+                "placeholder": ""
+            },
+            {
+                "key": "field_587666326303e",
+                "label": "Posici\u00f3n (izquierda o auto)",
+                "name": "theme_settings_header__header_menu_position",
+                "type": "select",
+                "instructions": "Posici\u00f3n (izquierda o auto)\r\n\t\t- Left: mostrar el submen\u00fa desde la posici\u00f3n mas a la izquierda posible.\r\n\t\t- Auto: mostrar el submenu desde la posicion relativa al elemento padre.",
+                "required": 1,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "choices": {
+                    "left": "Izquierda",
+                    "auto": "Auto"
+                },
+                "default_value": [
+                    "auto"
+                ],
+                "allow_null": 0,
+                "multiple": 0,
+                "ui": 0,
+                "ajax": 0,
+                "return_format": "value",
+                "placeholder": ""
+            },
+            {
+                "key": "field_587666aa16df3",
+                "label": "Animaci\u00f3n (Tipo de animaci\u00f3n al aparecer el elemento)",
+                "name": "theme_settings_header__header_menu_animation_type",
+                "type": "select",
+                "instructions": "Animaci\u00f3n (Tipo de animaci\u00f3n al aparecer el elemento)",
+                "required": 1,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "choices": {
+                    "menu-1": "Tipo 1",
+                    "menu-2": "Tipo 2",
+                    "menu-3": "Tipo 3",
+                    "menu-4": "Tipo 4",
+                    "menu-5": "Tipo 5"
+                },
+                "default_value": [
+                    "menu-1"
+                ],
+                "allow_null": 0,
+                "multiple": 0,
+                "ui": 0,
+                "ajax": 0,
+                "return_format": "value",
+                "placeholder": ""
+            },
+            {
+                "key": "field_58999bceb0c1d",
+                "label": "Tipo de animaci\u00f3n para el bot\u00f3n de mostrar \"menu mobile\" (Toggle)",
+                "name": "theme_settings_header__header_button_toggle_animation_type",
+                "type": "select",
+                "instructions": "Tipo de animaci\u00f3n para el bot\u00f3n de mostrar \"menu mobile\" (Toggle)",
+                "required": 1,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "choices": {
+                    "1": "Animaci\u00f3n 1",
+                    "2": "Animaci\u00f3n 2",
+                    "3": "Animaci\u00f3n 3",
+                    "4": "Animaci\u00f3n 4",
+                    "5": "Animaci\u00f3n 5",
+                    "6": "Animaci\u00f3n 6",
+                    "7": "Animaci\u00f3n 7",
+                    "8": "Animaci\u00f3n 8",
+                    "9": "Animaci\u00f3n 9",
+                    "10": "Animaci\u00f3n 10",
+                    "11": "Animaci\u00f3n 11",
+                    "12": "Animaci\u00f3n 12"
+                },
+                "default_value": [
+                    6
+                ],
+                "allow_null": 0,
+                "multiple": 0,
+                "ui": 0,
+                "ajax": 0,
+                "return_format": "value",
+                "placeholder": ""
+            }
+        ],
+        "location": [
+            [
+                {
+                    "param": "options_page",
+                    "operator": "==",
+                    "value": "acf-options-header"
+                }
+            ]
+        ],
+        "menu_order": 0,
+        "position": "normal",
+        "style": "default",
+        "label_placement": "top",
+        "instruction_placement": "label",
+        "hide_on_screen": "",
+        "active": 1,
+        "description": "",
+        "modified": 1484154873,
+        "local": "json"
+    },
+    {
+        "key": "theme_settings_social_group",
+        "title": "Theme Settings - Social",
+        "fields": [
+            {
+                "key": "field_5873a1f993d23",
+                "label": "Facebook",
+                "name": "theme_settings_social__facebook",
+                "type": "text",
+                "instructions": "Link de facebook de empresa",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "maxlength": ""
+            },
+            {
+                "key": "field_5873a25193d24",
+                "label": "Twitter",
+                "name": "theme_settings_social__twitter",
+                "type": "text",
+                "instructions": "Link de twitter de empresa",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "maxlength": ""
+            },
+            {
+                "key": "field_5873a28e65d01",
+                "label": "Google+",
+                "name": "theme_settings_social__google",
+                "type": "text",
+                "instructions": "Link de google+ de empresa",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "maxlength": ""
+            },
+            {
+                "key": "field_5873a29665d02",
+                "label": "Linkedin",
+                "name": "theme_settings_social__linkedin",
+                "type": "text",
+                "instructions": "Link de linkedin de empresa",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "maxlength": ""
+            },
+            {
+                "key": "field_5873a29765d03",
+                "label": "Instagram",
+                "name": "theme_settings_social__instagram",
+                "type": "text",
+                "instructions": "Link de instagram de empresa",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "maxlength": ""
+            },
+            {
+                "key": "field_5873a29865d04",
+                "label": "Pinterest",
+                "name": "theme_settings_social__pinterest",
+                "type": "text",
+                "instructions": "Link de pinterest de empresa",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "maxlength": ""
+            },
+            {
+                "key": "field_5873a29965d05",
+                "label": "Youtube",
+                "name": "theme_settings_social__youtube",
+                "type": "text",
+                "instructions": "Link de youtube de empresa",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "maxlength": ""
+            },
+            {
+                "key": "field_5873a2ea65d06",
+                "label": "Tripadvisor",
+                "name": "theme_settings_social__tripavisor",
+                "type": "text",
+                "instructions": "Link de tripadvisor de empresa",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "maxlength": ""
+            }
+        ],
+        "location": [
+            [
+                {
+                    "param": "options_page",
+                    "operator": "==",
+                    "value": "acf-options-social"
+                }
+            ]
+        ],
+        "menu_order": 0,
+        "position": "normal",
+        "style": "default",
+        "label_placement": "top",
+        "instruction_placement": "label",
+        "hide_on_screen": "",
+        "active": 1,
+        "description": "",
+        "modified": 1484059727,
+        "local": "json"
+    }
+]
