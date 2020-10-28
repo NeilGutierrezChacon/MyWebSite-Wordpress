@@ -67,90 +67,62 @@ $projects = $query->posts;
           <div class="col-md-4 col-sm-12">
             <h3 class="text-center mt-4">Education</h3>
             <ul class="list list-education">
-              <li>
-                <span>Web developer</span><br>
-                <span>Instituto Pedralbes, Barcelona(España)</span><br>
-                <span>9/18 - 06/20</span>
-              </li>
-              <li>
-                <span>Docker for developers</span><br>
-                <span>OpenWebinars, Barcelona(España)</span><br>
-                <span>5/20 - 5/20</span><br>
-              </li>
+              <!-- <?= var_dump(get_field('education')) ?> -->
+              <?php 
+                $field_education = get_field('education');
+                foreach ($field_education as $key => $value) {
+                  # code...
+              ?>
+                <li>
+                  <span><?= $value["degree"] ?></span><br>
+                  <span><?= $value["learning_institute"] ?></span><br>
+                  <span><?= $value["duration"] ?></span>
+                </li>
+              <?php
+                }
+              ?>
             </ul>
           </div>
           <div class="col-md-4 col-sm-12">
             <h3 class="text-center mt-4">Experience</h3>
             <ul class="list list-experience">
-              <li>
-                <span>Web developer</span><br>
-                <span>Deideasmarketing, Barcelona(España)</span><br>
-                <span>07/20 - 09/20</span>
-              </li>
+              <?php
+                $field_experience = get_field('experience');
+                foreach ($field_experience as $key => $value) {
+              ?>
+                <li>
+                  <span><?= $value['job'] ?></span><br>
+                  <span><?= $value['company'] ?></span><br>
+                  <span><?= $value['duration'] ?></span>
+                </li>
+              <?php
+                }
+              ?>
+              
             </ul>
           </div>
           <div class="col-md-4 col-sm-12">
             <h3 class="text-center mt-4">Skills & Tools</h3>
-            <ul class="list list-skills">  
-              <li>
-                <span list-id="FrontEnd" class="block-list-toggle">FrontEnd <i class="fas fa-caret-up"></i></span>
-                <ul id="FrontEnd" class="block-list" init_state="visible">
-                  <li>Html</li>
-                  <li>Css</li>
-                  <li>JavaScript</li>
-                  <li>Sass</li>
-                  <li>WebPack</li>
-                  <li>Gulp</li>
-                </ul>
-              </li>
-              <li>
-                <span list-id="BackEnd" class="block-list-toggle">BackEnd <i class="fas fa-caret-down"></i></span>
-                <ul id="BackEnd" class="block-list" init_state="hidden">
-                  <li>Sistemas Linux</li>
-                  <li>Apache</li>
-                  <li>Nginx</li>
-                  <li>Php</li>
-                  <li>NodeJs - Express</li>
-                  <li>MySql</li>
-                  <li>MongoDB</li>
-                  <li>Docker</li>
-                </ul>
-              </li>
-              <li>
-                <span list-id="Graphic-Design" class="block-list-toggle">Graphic design <i class="fas fa-caret-down"></i></span>
-                <ul id="Graphic-Design" class="block-list">
-                  <li>Figma - Mockup and prototyping</li>
-                  <li>Gimp</li>
-                </ul>
-              </li>
-              <li>
-                <span list-id="Frameworks" class="block-list-toggle">Frameworks <i class="fas fa-caret-down"></i></span>
-                <ul id="Frameworks" class="block-list">
-                  <li>Symfony</li>
-                  <li>Angular</li>
-                  <li>Vue</li>
-                </ul>
-              </li>
-              <li>
-                <span list-id="CMD" class="block-list-toggle">CMD <i class="fas fa-caret-down"></i></span>
-                <ul id="CMD" class="block-list">
-                  <li>WordPress</li>
-                  <li>Prestashop</li>
-                </ul>
-              </li>
-              <li>
-                <span list-id="Development-Tools" class="block-list-toggle">Development tools <i class="fas fa-caret-down"></i></span>
-                <ul id="Development-Tools" class="block-list">
-                  <li>Git</li>
-                  <li>Jira</li>
-                  <li>Docker Hub</li>
-                  <li>GitHub</li>
-                  <li>Vercel - Now</li>
-                  <li>Heroku</li>
-                  <li>AWS</li>
-                </ul>
-              </li>
-              
+            <ul class="list list-skills">
+              <?php
+                $field_skill_and_tools = get_field('skill_and_tools');
+                foreach ($field_skill_and_tools as $key => $value) {
+              ?>
+                <li>
+                  <span list-id="<?= $value['list_id'] ?>" class="block-list-toggle"><?= $value['title'] ?> <i class="fas fa-caret-up"></i></span>
+                  <ul id="<?= $value['list_id'] ?>" class="block-list" init_state="<?= $value['init_state'] ?>">
+                    <?php
+                      foreach ($value['list'] as $key => $item) {
+                    ?>
+                      <li><?= $item['item'] ?></li>
+                    <?php
+                      }  
+                    ?>
+                  </ul>
+                </li>
+              <?php
+                }
+              ?>  
             </ul>
           </div>
 		</div>

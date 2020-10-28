@@ -19,7 +19,11 @@ $args = array(
 $query = new WP_Query( $args );
 $posts = $query->posts;
 
+
+
 $imagen_cabecera = get_field('imagen_cabecera');
+
+$categories = get_categories();
 
 ?>
 
@@ -77,11 +81,15 @@ $imagen_cabecera = get_field('imagen_cabecera');
 			<div class="categories">
 				<h6>Categories</h6>
 				<ul>
-				<li><a>Diseño UX/UI</a></li>
-				<li><a>Web Developer</a></li>
-				<li><a>Technology</a></li>
-				<li><a>Entertainment</a></li>
-				<li><a>Web App</a></li>
+					<?php
+						foreach ($categories as $category) {
+							
+					?>
+						<li><a><?= $category->name ?></a></li>
+
+					<?php
+						}
+					?>
 				</ul>
 			</div>
 			</section>

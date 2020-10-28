@@ -11,11 +11,11 @@ $website_link = get_field('website',$project->ID); */
         <?php
             foreach ($posts as $key => $post) {
                 $image_destacada = wp_get_attachment_image_src(get_post_thumbnail_id($post->ID),'single-post-thumbnail')[0];
-               
+                $post_modified = explode(' ',$post->post_modified)[0];
         ?>
             <div class="swiper-slide">
                 <img src="<?= $image_destacada ?>" alt="Featured image of the post">
-                <span class="date"><?= $post->post_modified ?></span>
+                <span class="date"><?= $post_modified ?></span>
                 <h6 class="text-center">
                     <a href="<?= $post->guid ?>">
                         <?= $post->post_title ?>
