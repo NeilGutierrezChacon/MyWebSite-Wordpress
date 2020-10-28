@@ -679,15 +679,12 @@
 		
 		eventShowTextDescription();
 
-		$(document).ready(function(){
+		/* $(document).ready(function(){
 			var swiper = new Swiper('.swiper-container');
 			finalScroll();
 			eventClickReCreate();
 			redirectCaja();
-
-
-			
-		});
+		}); */
 		// TRANSITION END
 		// $('.element_target').one(transitionEvent, function(event) {
 	    	// Do something when the transition ends

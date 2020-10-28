@@ -90,6 +90,9 @@ $postID = $url->ID
 			integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
 			crossorigin="anonymous"
 			></script>
+
+			<!-- Axios -->
+			<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
 		</div>
 
 	</body>
