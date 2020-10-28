@@ -746,6 +746,7 @@
 			dms_parallax_scene_custom();
 			removeFirstLoader();
 		}
+		removeLoader();
 
 
 

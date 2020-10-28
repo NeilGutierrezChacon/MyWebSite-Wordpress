@@ -756,7 +756,7 @@ function custom_wp_enqueue_scripts() {
 	// wp_enqueue_style( 'font-awesome', 	ASSETS_DIRECTORY . "/bower_components/font-awesome/css/font-awesome.min.css" );
 
 	// SWIPER CSS
-	wp_enqueue_style( 'swiper', 		ASSETS_DIRECTORY . "/bower_components/Swiper/dist/css/swiper.min.css" );
+	// wp_enqueue_style( 'swiper', 		ASSETS_DIRECTORY . "/bower_components/Swiper/dist/css/swiper.min.css" );
 
 	// STYLE CSS
 	wp_enqueue_style( 'style', 			get_template_directory_uri() . "/style.css" );
