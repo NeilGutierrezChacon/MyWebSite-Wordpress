@@ -76,10 +76,7 @@ define( "DMS_USER_ID", 1);
 
 // DEVELOPERS
 $developers = array(
-	"gga" 	=> true,
 	"ngch" => true,
-	"other" => true
-
 );
 
 /**
@@ -750,13 +747,13 @@ function custom_wp_enqueue_scripts() {
 	// CSS
 	
 	// NORMALIZE CSS
-	wp_enqueue_style( 'normalize', 		ASSETS_DIRECTORY . "/bower_components/normalize-css/normalize.css" );
+	// wp_enqueue_style( 'normalize', 		ASSETS_DIRECTORY . "/bower_components/normalize-css/normalize.css" );
 
 	// ANIMATE CSS
-	wp_enqueue_style( 'animate', 		ASSETS_DIRECTORY . "/bower_components/animate.css/animate.min.css" );
+	// wp_enqueue_style( 'animate', 		ASSETS_DIRECTORY . "/bower_components/animate.css/animate.min.css" );
 
 	// FONT AWESOME CSS
-	wp_enqueue_style( 'font-awesome', 	ASSETS_DIRECTORY . "/bower_components/font-awesome/css/font-awesome.min.css" );
+	// wp_enqueue_style( 'font-awesome', 	ASSETS_DIRECTORY . "/bower_components/font-awesome/css/font-awesome.min.css" );
 
 	// SWIPER CSS
 	wp_enqueue_style( 'swiper', 		ASSETS_DIRECTORY . "/bower_components/Swiper/dist/css/swiper.min.css" );
@@ -786,7 +783,7 @@ function custom_wp_enqueue_scripts() {
 	// JS
 
 	// SWIPER JS
-	wp_enqueue_script( 'swiper',  		ASSETS_DIRECTORY . '/bower_components/Swiper/dist/js/swiper.jquery.min.js', array('jquery'), false, true);
+	// wp_enqueue_script( 'swiper',  		ASSETS_DIRECTORY . '/bower_components/Swiper/dist/js/swiper.jquery.min.js', array('jquery'), false, true);
 
 	// PARALLAX JS - IS ACTIVE PARALLAX SCENE
 	if(ACTIVE_PARALLAX_SCENE){
