@@ -478,7 +478,7 @@ body {
             }
             @media (min-width: 576px){
                 height: 35em;
-                width: 600px;
+                width: 735px;
             }
         }
     }
@@ -542,6 +542,27 @@ body {
                     width: 100%;
                 }
             }  
+        }
+
+        & .pagination{
+            & .page-numbers{
+                position: relative;
+                display: block;
+                padding: .5rem .75rem;
+                margin-left: -1px;
+                line-height: 1.25;
+                color: #1a1a1a;
+                background-color: #fff;
+                border: 1px solid transparent;
+                &:hover{
+                    z-index: 2;
+                    color: #000;
+                    text-decoration: none;
+                    background-color: #f7f7f9;
+                    border-color: transparent;
+                }
+            
+            }
         }
         @media (min-width: 576px){
             padding-left: 2em;

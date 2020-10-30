@@ -46,7 +46,9 @@ $is_home = is_front_page() ? " is-front" : " not-front";
 	<script src="https://kit.fontawesome.com/75fe86297f.js" crossorigin="anonymous"></script>
 	<!-- Bootstrap -->
 	<link rel="stylesheet" href="https://bootswatch.com/4/lux/bootstrap.min.css">
-    
+    <!-- Swiper -->
+	<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+	<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 </head>
 
 <body <?php body_class($is_home); ?>>
