@@ -46,7 +46,7 @@ $image = $image[0];
 		<div class="swiper-container" type-slider="3D-coverflow">
 			<div class="swiper-wrapper">
 				<?php
-					$images = get_field('galeria_imagenes');
+					$images = get_field('gallery');
 					foreach ($images as $img) {
 						
 				?>
