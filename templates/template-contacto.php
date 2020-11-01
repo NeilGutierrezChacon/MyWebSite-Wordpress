@@ -47,7 +47,7 @@ $formulario_contacto = get_field('formulario_contacto');
 			</div>
 		</div>
       	<!-- Formulario de mensaje directo -->
-		<div class="row d-flex justify-content-center mt-5">
+		<div class="row d-flex justify-content-center mt-5 block-form-contact">
 			<?= do_shortcode($formulario_contacto); ?>
 		</div>
 		

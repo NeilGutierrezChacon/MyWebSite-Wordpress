@@ -4,6 +4,8 @@ $image_destacada = wp_get_attachment_image_src(get_post_thumbnail_id($project->I
 $github_link = get_field('github',$project->ID);
 $website_link = get_field('website',$project->ID);
 
+$project_modified = explode(' ',$project->post_modified)[0];
+
 ?>
 
 <div
@@ -29,7 +31,7 @@ $website_link = get_field('website',$project->ID);
     </h4>
 
     <h6 class="card-subtitle mb-2 text-muted">
-      Update: <?= $project->post_modified ?>
+      Update: <?= $project_modified ?>
     </h6>
     <a href="<?= $github_link ?>" class="card-link text-info">GitHub</a>
     <a href="<?= $website_link ?>" class="card-link text-info">WebSite</a>

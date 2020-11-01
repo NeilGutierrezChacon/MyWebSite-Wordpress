@@ -127,9 +127,9 @@ $projects = $query->posts;
           </div>
 		</div>
 		<!-- Featured project -->
-        <div class="row">
+        <div class="row block-projects">
           <div class="col-12">
-            <h2 class="my-5 ml-3">
+            <h2>
               Featured project
             </h2>
           </div>

@@ -35,7 +35,17 @@ body {
         & .img_logo {
             width: 4em;
             height: 4em;
-		}
+        }
+        & nav{
+            & .current-menu-item{
+                & .menu-link{
+                    color:white !important;
+                }
+            }
+            & .menu-link{
+                color: rgba(255,255,255,.5) ;
+            }
+        }
 
 		
     }
@@ -53,7 +63,7 @@ body {
         height: auto;
         z-index: 1;
         background-color: #042145;
-        padding: 3rem 0;
+        padding: 2rem 0 4.5rem;
         /* margin-top: 1em; */
         color: white;
         & h4{
@@ -358,6 +368,13 @@ body {
             padding: 0 9.5em;
         }
     }
+    & .block-projects{
+        & h2{
+            @media (min-width: 576px) {
+                margin: 1em 0;
+            }
+        }
+    }
     
 }
 
@@ -441,7 +458,7 @@ body {
             align-items: center;
             flex-direction: column;
             position: relative;
-            height: 22em;
+            height: 17em;
             width: 100%;
             & img{
                 width: 100%;
@@ -665,11 +682,14 @@ body {
         }
     }
 
-    & .form-contact{
-        width: 90%;
-        @media (min-width: 576px){
-            width: 50%;
+    & .block-form-contact{
+        & form{
+            margin: 0 1em;
+            @media (min-width: 576px){
+                margin: 0;
+            }
         }
+        
     }
     
 }

@@ -231,30 +231,6 @@ var controller = {
   },
 
   /**
-   * @function settingNavMenu
-   * @description Add the "active" class when the page URL is equal 
-   * to the href of the menu item link and removed the "active" class when it is
-   * not equal.
-   */
-  settingNavMenu:function(){
-    let menu = document.querySelector('#nav-menu');
-    if(menu){
-      let nav_items = menu.getElementsByClassName("nav-item");
-      let current_path = window.location.pathname.split('/')[1];
-      Array.from(nav_items).forEach(item => {
-        let item_path = item.getElementsByClassName('nav-link')[0]
-                              .getAttribute('href')
-                                .split('/')[1];
-        if(item_path == current_path){
-          item.classList.add('active');
-        }else if(item.classList.contains('active')){
-          item.classList.remove('active');
-        }
-        
-      });
-    }
-  },
-  /**
    * @function nextProjects
    * @description If there are more projects to load,run the model function 
    * to loads the new data and run the view function to draw the content.
