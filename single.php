@@ -13,59 +13,56 @@ $image = wp_get_attachment_image_src( get_post_thumbnail_id(get_the_ID()),'singl
 $image = $image[0];
 
 
-
-$args = array(
-	'post_type' => 'news',
-	'posts_per_page' => 6,
-);
-$query = new WP_Query( $args );
-$news = $query->posts;
-
-	/* echo "<pre>";
-	var_dump($news[0]);
-	echo "</pre>"; */
 ?>
 
-	<section class="dms-template-single">
-		<div class = "principal" >
-			<!-- Contenido principal -->
-			<div class = "contenido" >
+	<section class="page-single-project project-<?= get_the_ID() ?>">
+		
+		<!-- Title -->
+		<div class="row">
+			<div class="col-12 block-title">
 				<h1><?php echo get_the_title(); ?></h1>
-				<?php if(isset($image)){ ?>
-					<img src="<?= $image ?>" alt="Imagen destacada">
-				<?php } ?>
-				<p><?php echo get_the_content(); ?></p>
-			</div>
-			<!-- SubMenu de la vista single -->
-			<div class = "sub-menu">
-				<h4>Etiquetas</h4>
-				<hr>
-				<?php if(get_the_tags()){ ?>
-					<ul class = "lista">
-						<?php foreach (get_the_tags() as $tag) { ?>
-							<li><?= $tag->name ?></li>
-						<?php } ?>
-					</ul>
-				<?php }else{ ?>
-					<p>Este post no tiene etiquetas</p>
-				<?php } ?>
-				<br>
-				<h4><a href="http://neil.deideasmarketing.solutions/news/">News</a></h4>
-				<span>Noticias destadacas</span>
-				<hr>
-				<?php if(isset($news)){ ?>
-					<ul class = "lista">
-						<?php foreach ($news as $element) { ?>
-							<li><a href="<?= $element->guid?>"><?= $element->post_title ?></a></li>
-						<?php } ?>
-					</ul>
-				<?php }else{ ?>
-					<p>No hay noticias registradas</p>
-				<?php } ?>
-				<br>
-				<h4><a href="http://neil.deideasmarketing.solutions/references/">Referencias</a></h4>
 			</div>
 		</div>
+		<!-- Links -->
+		<div class="row">
+			<div class="col-12 block-info-header">
+			<div class="info-links">
+				<a href="<?= get_field('github') ?>" class="text-info link">GitHub</a>
+				<a href="<?= get_field('website') ?>" class="text-info link">WebSite</a>
+			</div>
+			<a class="info-date">
+				<?= get_the_date() ?>
+			</a>
+			</div>
+		</div>
+		<!-- Content -->
+		<div class="row">
+			<div class="col-12 block-content">
+				<?php echo get_the_content(); ?>
+			</div>
+		</div>
+		
+		<!-- Images carrusel -->
+		<div class="swiper-container" type-slider="3D-coverflow">
+			<div class="swiper-wrapper">
+				<?php
+					$images = get_field('galeria_imagenes');
+					foreach ($images as $img) {
+						
+				?>
+				<img src="<?= $img['url'] ?>" alt="Image project" class="swiper-slide" />
+				<?php
+					}
+				?>
+			</div>
+			<!-- Add Pagination -->
+			<div class="swiper-pagination"></div>
+		</div>
+
+		<!-- <pre>
+			<?= var_dump(get_field('galeria_imagenes')) ?>
+		</pre> -->
+
 	</section>
 
 <?php

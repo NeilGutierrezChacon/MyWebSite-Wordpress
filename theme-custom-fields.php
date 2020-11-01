@@ -598,7 +598,7 @@ if( function_exists('acf_add_local_field_group') ):
                 array(
                     'param' => 'page_template',
                     'operator' => '==',
-                    'value' => 'templates/template-home.php',
+                    'value' => 'templates/dms-template-about-us.php',
                 ),
             ),
         ),
@@ -622,6 +622,98 @@ if( function_exists('acf_add_local_field_group') ):
         'acfe_note' => '',
     ));
     
-endif;
+    acf_add_local_field_group(array(
+        'key' => 'group_5f84da06b265a',
+        'title' => 'Proyectos',
+        'fields' => array(
+            array(
+                'key' => 'field_5f84da1291093',
+                'label' => 'Gallery',
+                'name' => 'gallery',
+                'type' => 'gallery',
+                'instructions' => 'Name: gallery',
+                'required' => 0,
+                'conditional_logic' => 0,
+                'wrapper' => array(
+                    'width' => '',
+                    'class' => '',
+                    'id' => '',
+                ),
+                'acfe_permissions' => '',
+                'return_format' => 'array',
+                'preview_size' => 'medium',
+                'insert' => 'append',
+                'library' => 'all',
+                'min' => '',
+                'max' => '',
+                'min_width' => '',
+                'min_height' => '',
+                'min_size' => '',
+                'max_width' => '',
+                'max_height' => '',
+                'max_size' => '',
+                'mime_types' => '',
+            ),
+            array(
+                'key' => 'field_5f84e45b1889c',
+                'label' => 'Github',
+                'name' => 'github',
+                'type' => 'url',
+                'instructions' => 'Name: github',
+                'required' => 0,
+                'conditional_logic' => 0,
+                'wrapper' => array(
+                    'width' => '',
+                    'class' => '',
+                    'id' => '',
+                ),
+                'acfe_permissions' => '',
+                'default_value' => '',
+                'placeholder' => '',
+            ),
+            array(
+                'key' => 'field_5f84e48390086',
+                'label' => 'Website',
+                'name' => 'website',
+                'type' => 'url',
+                'instructions' => 'Name: website',
+                'required' => 0,
+                'conditional_logic' => 0,
+                'wrapper' => array(
+                    'width' => '',
+                    'class' => '',
+                    'id' => '',
+                ),
+                'acfe_permissions' => '',
+                'default_value' => '',
+                'placeholder' => '',
+            ),
+        ),
+        'location' => array(
+            array(
+                array(
+                    'param' => 'post_type',
+                    'operator' => '==',
+                    'value' => 'projects',
+                ),
+            ),
+        ),
+        'menu_order' => 0,
+        'position' => 'normal',
+        'style' => 'default',
+        'label_placement' => 'left',
+        'instruction_placement' => 'label',
+        'hide_on_screen' => '',
+        'active' => true,
+        'description' => '',
+        'acfe_display_title' => '',
+        'acfe_autosync' => '',
+        'acfe_permissions' => '',
+        'acfe_form' => 0,
+        'acfe_meta' => '',
+        'acfe_note' => '',
+    ));
+    
+    endif;
 
 ?>

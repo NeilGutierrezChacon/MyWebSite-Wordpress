@@ -9,7 +9,7 @@ get_header();
 
 $args = array(
 	'post_type' => 'projects',
-	'posts_per_page' => 8,
+	/* 'posts_per_page' => 8, */
 );
 $query = new WP_Query( $args );
 $projects = $query->posts;

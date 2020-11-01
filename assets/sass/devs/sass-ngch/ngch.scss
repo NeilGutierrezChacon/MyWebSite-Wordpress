@@ -676,8 +676,12 @@ body {
 
 /* Single Project */
 .page-single-project{
+    padding: 0 4em;
+
     & .block-title{
+        margin-top: 2em;
         & h1{
+            text-align: center;
             font-size: 2.5rem;
             @media (min-width: 576px){
                 font-size: 3.5rem;
@@ -715,7 +719,8 @@ body {
         }
     }
 
-    & .delta{
+    & .block-content{  
+        margin-top: 1em;
         & img{
             width: 100%;
             margin: auto;
@@ -724,9 +729,12 @@ body {
                 width: auto;
             }
         }
+        & ul{
+            list-style: outside;
+            margin-left: 2.5em;
+        }
     }
-  
-      
+    
 }
 
 /* Post 5efaa8d122835f0007699dfa */
@@ -812,6 +820,7 @@ body {
 /* Template post */
 
 .page-single-post{
+    padding: 0 4em;
     & .block-title{
         & h1{
             font-size: 2.5rem;
